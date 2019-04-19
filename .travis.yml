@@ -7,32 +7,32 @@
 
 script:
   - bash test.sh
-  - bash image.sh -h
-  - bash image.sh -f image/ -i 50
-  - bash image.sh -f image/ -C 50
-  - bash image.sh -f image/ -w "zzskin"
-  - bash image.sh -f image/ -s "hhhhh"
-  - bash image.sh -f image/ -p "hhh"
+  - bash lab4/image.sh -h
+  - bash lab4/image.sh -f image/ -i 50
+  - bash lab4/image.sh -f image/ -C 50
+  - bash lab4/image.sh -f image/ -w "zzskin"
+  - bash lab4/image.sh -f image/ -s "hhhhh"
+  - bash lab4/image.sh -f image/ -p "hhh"
   
-  - bash worldcup.sh 
+  - bash lab4/worldcup.sh 
 
-  - bash web_log.sh -h
-  - bash web_log.sh -a
-  - bash web_log.sh -b
-  - bash web_log.sh -c
-  - bash web_log.sh -d
-  - bash web_log.sh -e
-  - bash web_log.sh -f /
+  - bash lab4/web_log.sh -h
+  - bash lab4/web_log.sh -a
+  - bash lab4/web_log.sh -b
+  - bash lab4/web_log.sh -c
+  - bash lab4/web_log.sh -d
+  - bash lab4/web_log.sh -e
+  - bash lab4/web_log.sh -f /
 
 
 
 
 
 after_script:
-  - /usr/bin/shellcheck test.sh
-  - /usr/bin/shellcheck image.sh
-  - /usr/bin/shellcheck worldcup.sh
-  - /usr/bin/shellcheck web_log.sh
+  - /usr/bin/shellcheck lab4/test.sh
+  - /usr/bin/shellcheck lab4/image.sh
+  - /usr/bin/shellcheck lab4/worldcup.sh
+  - /usr/bin/shellcheck lab4/web_log.sh
 
 after_failure:
   - id
